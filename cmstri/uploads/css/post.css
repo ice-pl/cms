@@ -1,0 +1,19 @@
+.post{
+	margin-left: 30px; 
+	margin-top: 20px;
+}
+
+.post-komendy{
+	font-size: large; 
+	line-height: 250%;
+	color: orange;
+}
+.post-podpunkty{
+	font-size: large; 
+	line-height: 250%;
+}
+.post-komentarz{
+	font-size: 13px;
+	font-style: italic;
+
+}

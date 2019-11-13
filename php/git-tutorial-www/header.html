@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+		<div id="logo">
+			Git<span style="color: #808080">Hub</span>
+		</div>
+		<nav id="topnav">
+			<ol>
+				<li><a class="lacze" href="index.html">Strona główna</a></li>
+				<li><a class="lacze" href="lokalne.html">Repozytorium lokalne</a></li>
+				<li><a class="lacze" href="zdalne.html">Repozytorium zdalne</a></li>
+				<li><a class="lacze" href="galezie.html">Obsługa gałęzi</a></li>
+				<li><a class="lacze" href="usuwanie.html"><span>Usuwanie</span></a></li>
+				<li><a class="lacze" href="zespolowa.html">Praca zespołowa</a></li>
+				<li><a class="lacze" href="pull.html">Pull request</a></li>
+				<li><a class="lacze" href="problemy.html">Rozwiązywanie problemów</a></li>
+			</ol>
+		</nav>
+
+</body>
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            var NavY=$('#topnav').offset().top;
+
+            var stickyNav = function(){
+                var ScrollY = $(window).scrollTop();
+
+                if(ScrollY > NavY){
+                    $('#topnav').addClass('sticky');
+                }else{
+                    $('#topnav').removeClass('sticky');
+                }
+            };
+            stickyNav();
+            $(window).scroll(function(){
+                stickyNav();
+            });
+        });
+    </script>
+</html>

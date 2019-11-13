@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pull request</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link rel="Stylesheet" href="./css/zoom.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.popupimg.js"></script>
+    <style>
+        * {margin:0; padding:0}
+		.wrapper {width: 100%; margin: 0 0}
+		/*.wrapper img {width: 20.3%; margin: 0; padding: 0; display: block; float: left; margin:1%;}*/
+		.wrapper img {width: 95.0%; margin-top: 1%; padding: 1px;}
+
+	</style>
+    <script>
+    $(function() {
+        $("#logo").load("header.html");
+        $("#stopka_glowna").load("footer.html");
+    });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+        <nav id="topnav"></nav>
+    </header>
+    <main>
+        <article id="lokalne">
+            <div class="definicja">
+                <span>Pull request <span>prośba o zaakceptowanie zmian gdy tworzymy wspólny projekt i nie mamy praw do mergowania gałęzi z masterem; umożliwia także poinformowanie osób zaangażowanych w projekt o zmianach, a także omówienie tych zmian dzięki komentarzom, dzięki czemu można zdecydować, które zmiany przyjąć, a które odrzucić.</span></span>
+            </div>
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Tworzenie i obsługa gałęzi
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">tworzymy nową gałąź i na nią przechodzimy
+                                <div class="komendy">git branch feature</div>
+                                <div class="komendy">git checkout feature</div>
+                            </li>
+                            <li class="podpunkty">tworyzmy nowy plik
+                                <div class="komendy">echo >> dodatkowy_plik.txt</div>
+                            </li>
+                            <li class="podpunkty">dodajemy plik do kolejki
+                                <div class="komendy">git add .</div>
+                            </li>
+                            <li class="podpunkty">tworzymy commit
+                                <div class="komendy">git commit -m "dodanie nowego pliku o nazwie dodatkowy_plik.txt"</div>
+                            </li>
+                            <li class="podpunkty">wgrywamy lokalne repozytorium na serwer (do odpowiedniej gałęzi)
+                                <div class="komendy">git push origin feature</div>
+                            </li>  
+                        </ol>
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                    <div class="wrapper">
+                        <img src="./img/PullRequest_22_pull_request_-_pogladowy.png" class="popupimg">
+                        <img src="./img/PullRequest_23_bash_-_nowa_galaz_(pull_request).png" class="popupimg">
+                    </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git branch feature</span>
+                        <span>git checkout feature</span>
+                        <span>git add .</span>
+                        <span>git commit -m "dodanie nowego pliku o nazwie dodatkowy_plik.txt"</span>
+                        <span>git push origin feature</span>
+                    </div>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Tworzenie pull request
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">wybór nowego branch-a
+                            </li>
+                            <li class="podpunkty">stworzenie nowego pull request
+                            </li>
+                            <li class="podpunkty">wybór gałęzi, do której dedykowane są zmiany oraz opis czego dotyczy pull request
+                            </li>
+                        </ol>
+
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/PullRequest_24_wybor_nowego_brancha_na_stronie.png" class="popupimg">
+                            <img src="./img/PullRequest_25_stworzenie_nowego_pull_request_na_stronie.png" class="popupimg">
+                            <img src="./img/PullRequest_26_pull_request_-_komentarz.png" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                    </div>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Konwersacja
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">dodawanie komentarzy do poszczególnych linii kodu
+                            </li>
+                            <li class="podpunkty">konwersacja dotycząca określonej gałęzi
+                            </li>
+                            <li class="podpunkty">jeśli posiadamy uprawnienia możemy zmergować gałąź
+                            </li>
+                        </ol>
+
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/PullRequest_27_dodawanie_komentarzy_do_kodu.png" class="popupimg">
+                            <img src="./img/PullRequest_28_konwersacja_dotyczaca_okreslonej_galezi.png" class="popupimg">
+                            <img src="./img/PullRequest_29_mergowanie_galezi.png" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                    </div>
+                </footer>
+            </section>
+
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Usuwanie i przywracanie gałęzi
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">usuwanie gałęzi
+                            </li>
+                            <li class="podpunkty">możliwość przywrócenia gałęzi
+                            </li>
+                            <li class="podpunkty">widok gałęzi po wszystkich operacjach
+                            </li>
+                        </ol>
+
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/PullRequest_30_usuwanie_galezi.png" class="popupimg">
+                            <img src="./img/PullRequest_31_mozliwosc_przywrocenia_galezi.png" class="popupimg">
+                            <img src="./img/PullRequest_32_widok_galezi_po_wszystkich_operacjach_A.png" class="popupimg">
+                            <img src="./img/PullRequest_33_widok_galezi_po_wszystkich_operacjach_B.png" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                    </div>
+                </footer>
+            </section>
+
+
+        </article>
+        <footer>
+            <div id="stopka_glowna"></div>
+        </footer>
+    </main>
+</body>
+
+
+<script>
+$(function() {
+    $('.popupimg').popupimg({
+        'show': 600,
+        'hide': 300
+    });
+});
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+<script>
+$(document).ready(function() {
+    var NavY = $('#topnav').offset().top;
+
+    var stickyNav = function() {
+        var ScrollY = $(window).scrollTop();
+
+        if (ScrollY > NavY) {
+            $('#topnav').addClass('sticky');
+        } else {
+            $('#topnav').removeClass('sticky');
+        }
+    };
+    stickyNav();
+    $(window).scroll(function() {
+        stickyNav();
+    });
+});
+</script>
+
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gałęzie</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link rel="Stylesheet" href="./css/zoom.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.popupimg.js"></script>
+    <style>
+        * {margin:0; padding:0}
+		.wrapper {width: 100%; margin: 0 0}
+		/*.wrapper img {width: 20.3%; margin: 0; padding: 0; display: block; float: left; margin:1%;}*/
+		.wrapper img {width: 95.0%; margin-top: 1%; padding: 1px;}
+
+	</style>
+    <script>
+    $(function() {
+        $("#logo").load("header.html");
+        $("#stopka_glowna").load("footer.html");
+    });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+        <nav id="topnav"></nav>
+    </header>
+    <main>
+        <article id="lokalne">
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Działania nasze
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">aktualizowanie lokalnej wersji
+                                <div class="komendy">git pull</div>
+
+                            </li>
+                            <li class="podpunkty">tworzymy nową gałąź i na nią przechodzimy
+                                <div class="komendy">git branch feature</div>
+                                <div class="komendy">git checkout feature</div>
+                            </li>
+                            <li class="podpunkty">tworyzmy nowy plik
+                                <div class="komendy">echo >> feature.txt</div>
+                            </li>
+                            <li class="podpunkty">dodajemy plik do kolejki
+                                <div class="komendy">git add .</div>
+                            </li>
+                            <li class="podpunkty">sprawdzamy bieżący status
+                                <div class="komendy">git status</div>
+                            </li>
+                            <li class="podpunkty">tworzymy commit
+                                <div class="komendy">git commit -m "Dodano nowy plik feature.txt"</div>
+                            </li>
+                            <li class="podpunkty">wgrywamy lokalne repozytorium na serwer (do odpowiedniej gałęzi)
+                                <div class="komendy">git push -u origin feature</div>
+                                <div class="komentarz">Jednorazowe polecenie, potem wystarczy tylko "git push".Opcja -u powoduje śledzenie gałęzi origin/master przez lokalną gałąź master. <br># master to nazwa gałęzi lokalnej.</div>
+                            </li>
+                            <li class="podpunkty">...
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/Zespolowa_34_stworzenie_galezi_commita_i_wgranie_na_serwer_dla_glownego_uzytkownika.png" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git pull</span>
+                        <span>git branch feature</span>
+                        <span>git checkout feature</span>
+                        <span>git add .</span>
+                        <span>git status</span>
+                        <span>git commit -m "Dodano nowy plik feature.txt"</span>
+                        <span>git push -u origin feature</span>
+                    </div>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Działania kolegi
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/Zespolowa_35_pobranie_repozytorium_przez_innego_uzytkownika.png" class="popupimg">
+                            <img src="./img/Zespolowa_36_zmiana_pliku_feature.txt_przez_innego_uzytkownika.png" class="popupimg">
+                        </div>
+                    </div>
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">klonowanie wersji zdalnej przez innego użytkownika
+                                <div class="komendy">git clone https://github.com/_nazwa_użytkownika_/learn-git.git nowy_kolegi</div>
+                            </li>
+                            <li class="podpunkty">inny użytkownik wchodzi do katalogu nowy_kolegi i przechodzi na gałąź feature
+                                <div class="komendy">cd nowy_kolegi</div>
+                                <div class="komendy">git checkout feature</div>
+                            </li>
+                            <li class="podpunkty">inny użytkownik zmienia plik feature.txt
+                            </li>
+                            <li class="podpunkty">...
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git clone https://github.com/_nazwa_użytkownika_/learn-git.git nowy_kolegi</span>
+                        <span>git checkout feature</span>
+                    </div>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Działania nasze
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol start="8">
+                            <li class="podpunkty">zmiana pliku feature.txt przez głównego użytkownika
+                            </li>
+                            <li class="podpunkty">dodajemy plik do kolejki
+                                <div class="komendy">git add .</div>
+                            </li>
+                            <li class="podpunkty">sprawdzamy bieżący status
+                                <div class="komendy">git status</div>
+                            </li>
+                            <li class="podpunkty">tworzymy commit
+                                <div class="komendy">git commit -m "zmiana w drugiej linii"</div>
+                            </li>
+                            <li class="podpunkty">poprawiamy commit
+                                <div class="komendy">git commit --amend -m "zmiana w drugiej linii w pliku feature.txt"</div>
+                                <div class="komentarz"># gdy wykonaliśmy commit za wcześnie, a jeszcze potem doszły pewne drobne zmiany. <br>Stara rewizja zostanie usunięta i powstanie nowa. </div>
+                            </li>
+                            <li class="podpunkty">wgrywamy lokalne repozytorium na serwer
+                                <div class="komendy">git push</div>
+                            </li>
+                            <li class="podpunkty">...
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/Zespolowa_37_zmiana_pliku_feature.txt_przez_glownego_uzytkownika_i_wyslanie_do_repozytorium.png" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git add .</span>
+                        <span>git status</span>
+                        <span>git commit -m "zmiana w drugiej linii"</span>
+                        <span>git commit --amend -m "zmiana w drugiej linii w pliku feature.txt"</span>
+                        <span>git push</span>
+                    </div>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Działania kolegi
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/Zespolowa_38_informacja_o_bledzie.png" class="popupimg">
+                            <img src="./img/Zespolowa_39_usuwanie_bledu_-_obydwie_wersje.png" class="popupimg">
+                            <img src="./img/Zespolowa_40_poprawiona_wersja.png" class="popupimg">
+                            <img src="./img/Zespolowa_41_merging_i_wyslanie_zmian.png" class="popupimg">
+                        </div>
+                    </div>
+                    <div class="opis" id="opis">
+                        <ol start="4">
+                            <li class="podpunkty">inny użytkownik dodaje plik do kolejki
+                                <div class="komendy">git add .</div>
+                            </li>
+                            <li class="podpunkty">inny użytkownik sprawdza bieżący status
+                                <div class="komendy">git status</div>
+                            </li>
+                            <li class="podpunkty">inny użytkownik tworzy commit
+                                <div class="komendy">git commit -m "zmiana w drugiej linii"</div>
+                            </li>
+                            <li class="podpunkty">inny użytkownik wgrywa lokalne repozytorium na serwer
+                                <div class="komendy">git push -u origin feature</div>
+                                <div class="komentarz"><span style="color: #cd6155;">git wykrył, że wersja repozytorium zdalnego różni się od repozytorium lokalnego kolegi</span><br><span style="color: #f4d03f;">git informuje kolegę, że przyjmie zmiany gdy ten zaktualizuje swoją wersję projektu</span></div>
+                            </li>
+                            <li class="podpunkty">git <u>nie wie</u>, która wersja jest właściwa więc pokazuje obie:
+                                <div class="komentarz"> - w sekcji oznaczonej HEAD są zmiany wprowadzone przez kolegę</div>
+                                <div class="komentarz"> - w sekcji oznaczonej hashem commitu są zmiany wprowadzone przez nas</div>
+                            </li>
+                            <li class="podpunkty">kolega decyduje, którą wersję pozostawić i usuwa niepotrzebny fragment i zatwierdza zmiany w reopzytorium
+                                <div class="komendy">git add .</div>
+                                <div class="komendy">git status</div>
+                                <div class="komendy">git commit -m "rozwiązono konflikt dotyczący drugiej linii pliku feature.txt"</div>
+                                <div class="komendy">git push</div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git add .</span>
+                        <span>git status</span>
+                        <span>git commit -m "zmiana w drugiej linii"</span>
+                        <span>git push -u origin feature</span>
+                        <span>git commit -m "rozwiązono konflikt dotyczący drugiej linii pliku feature.txt"</span>
+                        <span>git push</span>
+                    </div>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Działania nasze
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol start="14">
+                            <li class="podpunkty">pobieramy zmiany
+                                <div class="komendy">git pull</div>
+                            </li>
+                            <li class="podpunkty">przełączamy sie na gałąź master
+                                <div class="komendy">git checkout master</div>
+                            </li>
+                            <li class="podpunkty">połączenie brancha feature z masterem
+                                <div class="komendy">git merge feature</div>
+                            </li>
+                            <li class="podpunkty">usunięcie brancha feature
+                                <div class="komendy">git branch feature -d</div>
+                            </li>
+                            <li class="podpunkty">wgrywamy lokalne repozytorium na serwer
+                                <div class="komendy">git push</div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/Zespolowa_42_pobieranie_zmian_przez_glownego_uzytkownika.png" class="popupimg">
+                            <img src="./img/Zespolowa_43_pobieranie_zmian_przez_glownego_uzytkownika_meging_i_wyslanie.png" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git pull</span>
+                        <span>git checkout master</span>
+                        <span>git merge feature</span>
+                        <span>git branch feature -d</span>
+                        <span>git push</span>
+                    </div>
+                </footer>
+            </section>
+        </article>
+        <footer>
+            <div id="stopka_glowna"></div>
+        </footer>
+    </main>
+</body>
+
+
+<script>
+$(function() {
+    $('.popupimg').popupimg({
+        'show': 600,
+        'hide': 300
+    });
+});
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+<script>
+$(document).ready(function() {
+    var NavY = $('#topnav').offset().top;
+
+    var stickyNav = function() {
+        var ScrollY = $(window).scrollTop();
+
+        if (ScrollY > NavY) {
+            $('#topnav').addClass('sticky');
+        } else {
+            $('#topnav').removeClass('sticky');
+        }
+    };
+    stickyNav();
+    $(window).scroll(function() {
+        stickyNav();
+    });
+});
+</script>
+
+</html>

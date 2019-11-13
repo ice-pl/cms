@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Problemy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link rel="Stylesheet" href="./css/zoom.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.popupimg.js"></script>
+    <style>
+        * {margin:0; padding:0}
+		.wrapper {width: 100%; margin: 0 0}
+		/*.wrapper img {width: 20.3%; margin: 0; padding: 0; display: block; float: left; margin:1%;}*/
+		.wrapper img {width: 95.0%; margin-top: 1%; padding: 1px;}
+
+	</style>
+    <script>
+    $(function() {
+        $("#logo").load("header.html");
+        $("#stopka_glowna").load("footer.html");
+    });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+        <nav id="topnav"></nav>
+    </header>
+    <main>
+        <article id="lokalne">
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Problem z podłączeniem do GitHub-a
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">...
+                                <div class="komendy">git config --global credential.helper wincred</div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git add .</span>
+                        <span>git commit -m "pierwszy commit testowy"</span>
+                        <span>git push</span>
+                        <span>git reset --hard _nr_commita_do zachowania_</span>
+                        <span>git push --force</span>
+                    </div>
+                </footer>
+            </section>
+
+        </article>
+        <footer>
+            <div id="stopka_glowna"></div>
+        </footer>
+    </main>
+</body>
+
+
+<script>
+$(function() {
+    $('.popupimg').popupimg({
+        'show': 600,
+        'hide': 300
+    });
+});
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+<script>
+$(document).ready(function() {
+    var NavY = $('#topnav').offset().top;
+
+    var stickyNav = function() {
+        var ScrollY = $(window).scrollTop();
+
+        if (ScrollY > NavY) {
+            $('#topnav').addClass('sticky');
+        } else {
+            $('#topnav').removeClass('sticky');
+        }
+    };
+    stickyNav();
+    $(window).scroll(function() {
+        stickyNav();
+    });
+});
+</script>
+
+</html>

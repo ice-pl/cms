@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Usuwanie</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link rel="Stylesheet" href="./css/zoom.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.popupimg.js"></script>
+    <style>
+        * {margin:0; padding:0}
+		.wrapper {width: 100%; margin: 0 0}
+		/*.wrapper img {width: 20.3%; margin: 0; padding: 0; display: block; float: left; margin:1%;}*/
+		.wrapper img {width: 95.0%; margin-top: 1%; padding: 1px;}
+
+	</style>
+    <script>
+    $(function() {
+        $("#logo").load("header.html");
+        $("#stopka_glowna").load("footer.html");
+    });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+        <nav id="topnav"></nav>
+    </header>
+    <main>
+        <article id="lokalne">
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Usuwanie commit-ów
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">tworzenie dodatkowych commitów
+                                <div class="komendy">echo > pierwszy.txt</div>
+                                <div class="komendy">git add .</div>
+                                <div class="komendy">git commit -m "pierwszy commit testowy"</div>
+                                <div class="komendy">git push</div>
+                            </li>
+                            <li class="podpunkty">ustawienie ostaniego commita do zachowania
+                                <div class="komendy">git reset --hard _nr_commita_do zachowania_</div>
+                            </li>
+                            <li class="podpunkty">nadpisanie danych na serwerze
+                                <div class="komendy">git push --force</div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/Usuwanie_44_tworzenie_dodatkowych_commitow.png" class="popupimg">
+                            <img src="./img/Usuwanie_45_usuwanie_commitow_-_ustawienie_ostaniego_commita_do_zachowania.png" class="popupimg">
+                            <img src="./img/Usuwanie_46_nadpisanie_danych_na_serwerze.png" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git add .</span>
+                        <span>git commit -m "pierwszy commit testowy"</span>
+                        <span>git push</span>
+                        <span>git reset --hard _nr_commita_do zachowania_</span>
+                        <span>git push --force</span>
+                    </div>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Usuwanie gałęzi
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">tworzenie dodatkowych gałęzi
+                            </li>
+                            <li class="podpunkty">usuwanie brancha lokalnego
+                                <div class="komendy">git branch</div>
+                                <div class="komendy">git checkout master</div>
+                                <div class="komendy">git branch -D second</div>
+                                <div class="komendy">git push</div>
+                            </li>
+                            <li class="podpunkty">usuwanie brancha zdalnego
+                                <div class="komendy">    git push https://github.com/_nazwa_użytkownika_/learn-git.git --delete second
+                                </div>
+                            </li>
+                        </ol>
+
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/Usuwanie_47_widok_dodatkowych_branchy.png" class="popupimg">
+                            <img src="./img/Usuwanie_48_usuwanie_brancha_najpierw_lokalnego_potem_zdalnego.png" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git branch</span>
+                        <span>git checkout master</span>
+                        <span>git branch -D second</span>
+                        <span>git push</span>
+                        <span>git push https://github.com/_nazwa_użytkownika_/learn-git.git --delete second </span>
+                    </div>
+                </footer>
+            </section>
+        </article>
+        <footer>
+            <div id="stopka_glowna"></div>
+        </footer>
+    </main>
+</body>
+
+
+<script>
+$(function() {
+    $('.popupimg').popupimg({
+        'show': 600,
+        'hide': 300
+    });
+});
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+<script>
+$(document).ready(function() {
+    var NavY = $('#topnav').offset().top;
+
+    var stickyNav = function() {
+        var ScrollY = $(window).scrollTop();
+
+        if (ScrollY > NavY) {
+            $('#topnav').addClass('sticky');
+        } else {
+            $('#topnav').removeClass('sticky');
+        }
+    };
+    stickyNav();
+    $(window).scroll(function() {
+        stickyNav();
+    });
+});
+</script>
+
+</html>

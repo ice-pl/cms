@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lokalne</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link rel="Stylesheet" href="./css/zoom.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.popupimg.js"></script>
+    <style>
+        * {margin:0; padding:0}
+		.wrapper {width: 100%; margin: 0 0}
+		/*.wrapper img {width: 20.3%; margin: 0; padding: 0; display: block; float: left; margin:1%;}*/
+		.wrapper img {width: 95.0%; margin-top: 1%; padding: 1px;}
+
+	</style>
+    <script>
+    $(function() {
+        $("#logo").load("header.html");
+        $("#stopka_glowna").load("footer.html");
+    });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+        <nav id="topnav"></nav>
+    </header>
+    <main>
+        <article id="lokalne">
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Tworzenie repozytorium
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">Tworzymy nowy folder
+                                <div class="komendy">mkdir nowy</div>
+                            </li>
+                            <li class="podpunkty">wchodzimy do tego folderu
+                                <div class="komendy">cd nowy</div>
+                            </li>
+                            <li class="podpunkty">inicjalizujemy repozytorium
+                                <div class="komendy">git init</div>
+                            </li>
+                            <li class="podpunkty">wchodzimy do folderu poprzez bash git-a
+                                <div class="komendy"></div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/Lokalne_01_inicjalizacja_git-a.jpg" class="popupimg">
+                            <img src="./img/Lokalne_02_wejscie_poprzez_bash_git-a.jpg" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git init</span>
+                    </div>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Dodawanie do kolejki
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">sprawdzamy bieżący status
+                                <div class="komendy">git status</div>
+                            </li>
+                            <li class="podpunkty">tworyzmy pliki
+                                <div class="komendy">echo >> nowy.txt</div>
+                                <div class="komendy">echo >> do_ukrycia.txt</div>
+                            </li>
+                            <li class="podpunkty">dodajemy pliki do kolejki
+                                <div class="komendy">git add .</div>
+                            </li>
+                            <li class="podpunkty">sprawdzamy bieżący status
+                                <div class="komendy">git status</div>
+                            </li>
+                            <li class="podpunkty">wprowadzamy zmiany do pliku i sprawdzamy bieżący status
+                                <div class="komendy">git status</div>
+                                <div class="komentarz">mamy dwie wersje pliku i musimy zdecydować co zrobić: usunąć którąś kopię, przywrócić oczekującą na zatwierdzenie lub ponownie dodać plik do kolejki oczekiwania<br>na czerwono - pliki nie śledzone<br>na zielono - pliki śledzone
+                                </div>
+                            </li>
+                            <li class="podpunkty">tworzymy commit
+                                <div class="komendy">git commit -m "Pierwsza rewizja"</div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/Lokalne_03_kolory_plikow.jpg" class="popupimg">
+                            <img src="./img/Lokalne_04_dodawanie.png" class="popupimg">
+                            <img src="./img/Lokalne_05_dwie_wersje_pliku.png" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git status</span>
+                        <span>git add .</span>
+                        <span>git commit -m "Pierwsza rewizja"</span>
+                    </div>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Ignorowanie plików
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">tworzymy plik z listą ignorowanych plików i folderów
+                                <div class="komendy">nano .gitignore</div>
+                            </li>
+                            <li class="podpunkty">w edytorze nano wpisujemy ignorowane pliki / foldery
+                            </li>
+                            <li class="podpunkty">sprawdzamy bieżący status
+                                <div class="komendy">git status</div>
+                                <div class="komentarz">brakuje pliku do_ukrycia.txt, a pojawił się .gitignore
+                                </div>
+                            </li>
+                            <li class="podpunkty">usuwamy .gitignore
+                                <div class="komendy">rm .gitignore</div>
+                            </li>
+                            <li class="podpunkty">sprawdzamy bieżący status
+                                <div class="komendy">git status</div>
+                                <div class="komentarz">plik do_ukrycia.txt jest widoczny
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/Lokalne_18_tworzenie_.gitignore.png" class="popupimg">
+                            <img src="./img/Lokalne_19_lista_plikow_z_i_bez_.gitignore.png" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>nano .gitignore</span>
+                    </div>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <div class="naglowek">
+                        Modyfikowanie kolejki
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="opis" id="opis">
+                        <ol>
+                            <li class="podpunkty">dodajemy pliki do kolejki
+                                <div class="komendy">git add .</div>
+                            </li>
+                            <li class="podpunkty">sprawdzamy bieżący status
+                                <div class="komendy">git status</div>
+                            </li>
+                            <li class="podpunkty">resetujemy kolejkę
+                                <div class="komendy">git reset</div>
+                            </li>
+                            <li class="podpunkty">sprawdzamy bieżący status
+                                <div class="komendy">git status</div>
+                                <div class="komentarz">po resecie kolejki wszystkie pliki, które w niej były stają się nie śledzone
+                                </div>
+                            <li class="podpunkty">dodajemy pliki do kolejki
+                                <div class="komendy">git add .</div>
+                            </li>
+                            <li class="podpunkty">sprawdzamy bieżący status
+                                <div class="komendy">git status</div>
+                            </li>
+                            <li class="podpunkty">usuwamy z kolejki określony plik / pliki
+                                <div class="komendy">git rm --cached do_ukrycia.txt</div>
+                            </li>
+                            <li class="podpunkty">sprawdzamy bieżący status
+                                <div class="komendy">git status</div>
+                                <div class="komentarz">po usunięciu pliku z cache-u plik, który został usunięty staje się nie śledzony, a pozostałe nadal są śledzone
+                                </div>
+                            </li>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="zdjecia" id="zdjecia">
+                        <div class="wrapper">
+                            <img src="./img/Lokalne_20_git_reset.png" class="popupimg">
+                            <img src="./img/Lokalne_21_git_rm_cached.png" class="popupimg">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class=stopka>
+                        <span>git add .</span>
+                        <span>git status</span>
+                        <span>git reset</span>
+                        <span>git rm --cached do_ukrycia.txt</span>
+                    </div>
+                </footer>
+            </section>
+        </article>
+        <footer>
+            <div id="stopka_glowna"></div>
+        </footer>
+    </main>
+</body>
+
+
+<script>
+$(function() {
+    $('.popupimg').popupimg({
+        'show': 600,
+        'hide': 300
+    });
+});
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+<script>
+$(document).ready(function() {
+    var NavY = $('#topnav').offset().top;
+
+    var stickyNav = function() {
+        var ScrollY = $(window).scrollTop();
+
+        if (ScrollY > NavY) {
+            $('#topnav').addClass('sticky');
+        } else {
+            $('#topnav').removeClass('sticky');
+        }
+    };
+    stickyNav();
+    $(window).scroll(function() {
+        stickyNav();
+    });
+});
+</script>
+
+</html>
