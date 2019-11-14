@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 03:17:28
+/* Smarty version 3.1.31, created on 2019-11-13 11:28:06
   from "cms_template:Lumia - Core - css" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbce7384e09f6_72919217',
+  'unifunc' => 'content_5dcbdab60af435_87504919',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbce7384e09f6_72919217 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbdab60af435_87504919 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <link href="http://localhost/cmstri/uploads/css/bootstrap.css" rel="stylesheet">
     <link href="http://localhost/cmstri/uploads/css/bootstrap-responsive.css" rel="stylesheet">

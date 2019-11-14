@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 04:11:59
+/* Smarty version 3.1.31, created on 2019-11-13 11:32:09
   from "module_file_tpl:Gallery;admingalleries.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbcf3ffc06776_04675195',
+  'unifunc' => 'content_5dcbdba98202b7_78641007',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbcf3ffc06776_04675195 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbdba98202b7_78641007 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_function_cycle')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\smarty\\plugins\\function.cycle.php';
 ?>
 <div class="pageoverflow">

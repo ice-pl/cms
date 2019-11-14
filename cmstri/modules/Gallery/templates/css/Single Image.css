@@ -1,0 +1,7 @@
+/* height and width should be the same as the thumbnail sizes */
+#slides {
+  width: 940px;
+  height: 400px;
+  max-width:100%;
+  max-height:100%;
+}

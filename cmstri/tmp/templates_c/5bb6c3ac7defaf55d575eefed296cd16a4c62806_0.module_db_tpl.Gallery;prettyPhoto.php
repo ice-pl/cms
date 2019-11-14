@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 06:59:08
+/* Smarty version 3.1.31, created on 2019-11-13 12:18:11
   from "module_db_tpl:Gallery;prettyPhoto" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbd1b2c7e8b02_62311715',
+  'unifunc' => 'content_5dcbe6733f02d6_69157032',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbd1b2c7e8b02_62311715 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbe6733f02d6_69157032 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="gallery">
 

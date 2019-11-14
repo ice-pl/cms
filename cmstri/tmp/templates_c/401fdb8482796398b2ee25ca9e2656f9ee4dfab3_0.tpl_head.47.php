@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-05 06:56:01
+/* Smarty version 3.1.31, created on 2019-11-13 12:35:17
   from "tpl_head:47" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dc10ef1588cf5_66910558',
+  'unifunc' => 'content_5dcbea75cf1460_27968850',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'cms_template:Lumia - Core - css' => 1,
   ),
 ),false)) {
-function content_5dc10ef1588cf5_66910558 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbea75cf1460_27968850 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_function_title')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.title.php';
 if (!is_callable('smarty_function_sitename')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.sitename.php';
 if (!is_callable('smarty_function_metadata')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.metadata.php';

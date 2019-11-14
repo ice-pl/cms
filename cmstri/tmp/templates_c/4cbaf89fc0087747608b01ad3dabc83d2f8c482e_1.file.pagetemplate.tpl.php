@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 03:17:50
+/* Smarty version 3.1.31, created on 2019-11-14 04:58:56
   from "C:\xampp\htdocs\cmstri\admin\themes\OneEleven\templates\pagetemplate.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbce74e54ca22_38130071',
+  'unifunc' => 'content_5dccd100b133e5_75969415',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -48,7 +48,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5dbce74e54ca22_38130071 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dccd100b133e5_75969415 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_truncate')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\smarty\\plugins\\modifier.truncate.php';
 if (!is_callable('smarty_function_sitename')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.sitename.php';
 if (!is_callable('smarty_function_cms_jquery')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.cms_jquery.php';
@@ -153,7 +153,7 @@ echo smarty_function_sitename(array(),$_smarty_tpl);?>
 					</div>
 					<!-- bookmarks -->
 					<?php
-$_smarty_tpl->_subTemplateRender('file:shortcuts.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false, 'e70f8c7ed0f49100193b23b23f62cbb2b8452ba4', 'content_5dbce74e48e659_85114655');
+$_smarty_tpl->_subTemplateRender('file:shortcuts.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false, 'e70f8c7ed0f49100193b23b23f62cbb2b8452ba4', 'content_5dccd100a166f6_19539031');
 ?>
 
 				</div>
@@ -174,7 +174,7 @@ $_smarty_tpl->_subTemplateRender('file:shortcuts.tpl', $_smarty_tpl->cache_id, $
 /<?php echo lang('close');?>
 </span>
  			            <?php
-$_smarty_tpl->_subTemplateRender('file:navigation.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('nav'=>$_smarty_tpl->tpl_vars['theme']->value->get_navigation_tree()), 0, false, '423db6af14973e9021949d63fe750e94772a3076', 'content_5dbce74e4c8b46_29754526');
+$_smarty_tpl->_subTemplateRender('file:navigation.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('nav'=>$_smarty_tpl->tpl_vars['theme']->value->get_navigation_tree()), 0, false, '423db6af14973e9021949d63fe750e94772a3076', 'content_5dccd100a59710_46824271');
 ?>
 
 				    </aside>
@@ -183,7 +183,7 @@ $_smarty_tpl->_subTemplateRender('file:navigation.tpl', $_smarty_tpl->cache_id, 
 				<!-- start main -->
 				<div id="oe_mainarea" class="cf">
 					<?php
-$_smarty_tpl->_subTemplateRender('file:messages.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false, 'cf1532f683085071da0340e08c44c52df091a885', 'content_5dbce74e5043f0_70274647');
+$_smarty_tpl->_subTemplateRender('file:messages.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false, 'cf1532f683085071da0340e08c44c52df091a885', 'content_5dccd100ab5342_33560066');
 ?>
 <article role="main" class="content-inner"><header class="pageheader<?php if (isset($_smarty_tpl->tpl_vars['is_ie']->value)) {?> drop-hidden<?php }?> cf"><?php if (isset($_smarty_tpl->tpl_vars['module_icon_url']->value) || isset($_smarty_tpl->tpl_vars['pagetitle']->value)) {?><h1><?php if (isset($_smarty_tpl->tpl_vars['module_icon_url']->value)) {?><img src="<?php echo $_smarty_tpl->tpl_vars['module_icon_url']->value;?>
 " alt="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['module_name']->value)===null||$tmp==='' ? '' : $tmp);?>
@@ -204,7 +204,7 @@ if (isset($_smarty_tpl->tpl_vars['module_help_url']->value)) {?> <span class="he
 			<!-- end content //-->
 			<!-- start footer -->
 			<?php
-$_smarty_tpl->_subTemplateRender('file:footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false, 'c74c0dc99ebbf1b510e899c1da5764885332447a', 'content_5dbce74e516880_66316264');
+$_smarty_tpl->_subTemplateRender('file:footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false, 'c74c0dc99ebbf1b510e899c1da5764885332447a', 'content_5dccd100ace4f4_10191217');
 ?>
 
 			<!-- end footer //-->
@@ -216,7 +216,7 @@ $_smarty_tpl->_subTemplateRender('file:footer.tpl', $_smarty_tpl->cache_id, $_sm
 </html>
 <?php }
 /* Start inline template "C:\xampp\htdocs\cmstri\admin\themes\OneEleven\templates\pagetemplate.tpl" =============================*/
-function content_5dbce74e48e659_85114655 ($_smarty_tpl) {
+function content_5dccd100a166f6_19539031 ($_smarty_tpl) {
 ?>
 <div class="shortcuts"><ul class="cf"><li class="help"><?php if (isset($_smarty_tpl->tpl_vars['module_help_url']->value)) {?><a href="<?php echo $_smarty_tpl->tpl_vars['module_help_url']->value;?>
 " title="<?php echo lang('module_help');?>
@@ -294,7 +294,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 }
 /* End inline template "C:\xampp\htdocs\cmstri\admin\themes\OneEleven\templates\pagetemplate.tpl" =============================*/
 /* Start inline template "C:\xampp\htdocs\cmstri\admin\themes\OneEleven\templates\pagetemplate.tpl" =============================*/
-function content_5dbce74e4c8b46_29754526 ($_smarty_tpl) {
+function content_5dccd100a59710_46824271 ($_smarty_tpl) {
 if (!isset($_smarty_tpl->tpl_vars['depth']->value)) {
 $_smarty_tpl->_assignInScope('depth', '0');
 }
@@ -331,7 +331,7 @@ if ($_smarty_tpl->tpl_vars['depth']->value == '0') {?></ul></nav><?php }
 }
 /* End inline template "C:\xampp\htdocs\cmstri\admin\themes\OneEleven\templates\pagetemplate.tpl" =============================*/
 /* Start inline template "C:\xampp\htdocs\cmstri\admin\themes\OneEleven\templates\pagetemplate.tpl" =============================*/
-function content_5dbce74e5043f0_70274647 ($_smarty_tpl) {
+function content_5dccd100ab5342_33560066 ($_smarty_tpl) {
 if (isset($_smarty_tpl->tpl_vars['errors']->value) && $_smarty_tpl->tpl_vars['errors']->value[0] != '') {?><aside class="message pageerrorcontainer" role="alert"><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['errors']->value, 'error');
 if ($_from !== null) {
@@ -357,7 +357,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 }
 /* End inline template "C:\xampp\htdocs\cmstri\admin\themes\OneEleven\templates\pagetemplate.tpl" =============================*/
 /* Start inline template "C:\xampp\htdocs\cmstri\admin\themes\OneEleven\templates\pagetemplate.tpl" =============================*/
-function content_5dbce74e516880_66316264 ($_smarty_tpl) {
+function content_5dccd100ace4f4_10191217 ($_smarty_tpl) {
 ?>
 <footer id="oe_footer" class="cf"><div class="footer-left"><small class="copyright">Copyright &copy; <a rel="external" href="http://www.cmsmadesimple.org">CMS Made Simple&trade; <?php echo smarty_function_cms_version(array(),$_smarty_tpl);?>
  &ldquo;<?php echo smarty_function_cms_versionname(array(),$_smarty_tpl);?>

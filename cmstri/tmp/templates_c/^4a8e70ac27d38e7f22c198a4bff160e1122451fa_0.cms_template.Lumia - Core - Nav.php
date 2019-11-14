@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 03:17:28
+/* Smarty version 3.1.31, created on 2019-11-13 11:28:05
   from "cms_template:Lumia - Core - Nav" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbce7384193f0_56084016',
+  'unifunc' => 'content_5dcbdab5c7a6a8_51451741',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbce7384193f0_56084016 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbdab5c7a6a8_51451741 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'cssmenu_ulshadow' => 
   array (
     'compiled_filepath' => 'C:\\xampp\\htdocs\\cmstri\\tmp\\templates_c\\^4a8e70ac27d38e7f22c198a4bff160e1122451fa_0.cms_template.Lumia - Core - Nav.php',
     'uid' => '4a8e70ac27d38e7f22c198a4bff160e1122451fa',
-    'call_name' => 'smarty_template_function_cssmenu_ulshadow_12222709285dbce73839d512_67366960',
+    'call_name' => 'smarty_template_function_cssmenu_ulshadow_3765584885dcbdab5bda0b7_12805757',
   ),
 ));
 ?>
@@ -42,9 +42,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
   
 <?php }
 }
-/* smarty_template_function_cssmenu_ulshadow_12222709285dbce73839d512_67366960 */
-if (!function_exists('smarty_template_function_cssmenu_ulshadow_12222709285dbce73839d512_67366960')) {
-function smarty_template_function_cssmenu_ulshadow_12222709285dbce73839d512_67366960($_smarty_tpl,$params) {
+/* smarty_template_function_cssmenu_ulshadow_3765584885dcbdab5bda0b7_12805757 */
+if (!function_exists('smarty_template_function_cssmenu_ulshadow_3765584885dcbdab5bda0b7_12805757')) {
+function smarty_template_function_cssmenu_ulshadow_3765584885dcbdab5bda0b7_12805757($_smarty_tpl,$params) {
 $params = array_merge(array('depth'=>0), $params);
 foreach ($params as $key => $value) {
 $_smarty_tpl->tpl_vars[$key] = new Smarty_Variable($value, $_smarty_tpl->isRenderingCache);
@@ -139,5 +139,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 </ul>
 <?php
 }}
-/*/ smarty_template_function_cssmenu_ulshadow_12222709285dbce73839d512_67366960 */
+/*/ smarty_template_function_cssmenu_ulshadow_3765584885dcbdab5bda0b7_12805757 */
 }

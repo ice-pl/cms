@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-05 05:03:09
+/* Smarty version 3.1.31, created on 2019-11-13 12:34:55
   from "tpl_head:25" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dc0f47d08b8d9_38909776',
+  'unifunc' => 'content_5dcbea5f030ef3_35027145',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f814bb2d1e7e0bd4f039da60b738151bac48eae3' => 
     array (
       0 => 'tpl_head:25',
-      1 => '1572926569',
+      1 => '1573632354',
       2 => 'tpl_head',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'cms_template:Lumia - Core - css' => 1,
   ),
 ),false)) {
-function content_5dc0f47d08b8d9_38909776 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbea5f030ef3_35027145 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_function_title')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.title.php';
 if (!is_callable('smarty_function_sitename')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.sitename.php';
 if (!is_callable('smarty_function_metadata')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.metadata.php';

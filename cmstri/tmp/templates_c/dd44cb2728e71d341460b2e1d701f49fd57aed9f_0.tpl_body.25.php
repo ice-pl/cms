@@ -1,29 +1,29 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-05 05:03:08
+/* Smarty version 3.1.31, created on 2019-11-13 12:34:54
   from "tpl_body:25" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dc0f47cf0ff01_51486807',
+  'unifunc' => 'content_5dcbea5edbe513_69362190',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dd44cb2728e71d341460b2e1d701f49fd57aed9f' => 
     array (
       0 => 'tpl_body:25',
-      1 => '1572926569',
+      1 => '1573632354',
       2 => 'tpl_body',
     ),
   ),
   'includes' => 
   array (
-    'cms_template:Lumia - Core - Flexslider' => 1,
     'cms_template:Lumia - Core - Footer' => 1,
     'cms_template:Lumia - Core - Javascript' => 1,
   ),
 ),false)) {
-function content_5dc0f47cf0ff01_51486807 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbea5edbe513_69362190 (Smarty_Internal_Template $_smarty_tpl) {
+if (!is_callable('smarty_function_page_attr')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.page_attr.php';
 ?>
 <body>
 
@@ -59,8 +59,11 @@ function content_5dc0f47cf0ff01_51486807 (Smarty_Internal_Template $_smarty_tpl)
             <!-- Place somewhere in the <body> of your page -->
             <div id="mainslider" class="flexslider">
 
-                <?php $_smarty_tpl->_subTemplateRender('cms_template:Lumia - Core - Flexslider', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
+                
+              <?php ob_start();
+echo smarty_function_page_attr(array('key'=>'extra1'),$_smarty_tpl);
+$_prefixVariable1=ob_get_clean();
+echo Gallery::function_plugin(array('dir'=>$_prefixVariable1,'template'=>"CycleForHome"),$_smarty_tpl);?>
 
 
           </div>

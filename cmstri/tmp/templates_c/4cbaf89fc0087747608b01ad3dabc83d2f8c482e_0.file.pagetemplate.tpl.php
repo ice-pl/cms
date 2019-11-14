@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 03:17:20
+/* Smarty version 3.1.31, created on 2019-11-14 05:09:23
   from "C:\xampp\htdocs\cmstri\admin\themes\OneEleven\templates\pagetemplate.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbce730ee3299_59331870',
+  'unifunc' => 'content_5dccd373a167b9_73657820',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -24,7 +24,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5dbce730ee3299_59331870 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dccd373a167b9_73657820 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_truncate')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\smarty\\plugins\\modifier.truncate.php';
 if (!is_callable('smarty_function_sitename')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.sitename.php';
 if (!is_callable('smarty_function_cms_jquery')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.cms_jquery.php';

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 04:23:34
+/* Smarty version 3.1.31, created on 2019-11-13 11:28:45
   from "module_file_tpl:Gallery;edittemplate.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbcf6b64bc5c0_43050373',
+  'unifunc' => 'content_5dcbdadd5c4540_77571344',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbcf6b64bc5c0_43050373 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbdadd5c4540_77571344 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="pageoverflow">
 <h3><?php echo $_smarty_tpl->tpl_vars['title']->value;?>

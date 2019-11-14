@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-03 06:34:08
+/* Smarty version 3.1.31, created on 2019-11-14 05:08:32
   from "module_file_tpl:News;articlelist.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbe66d08079b0_17081159',
+  'unifunc' => 'content_5dccd340b523e8_55726549',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbe66d08079b0_17081159 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dccd340b523e8_55726549 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_function_cms_help')) require_once 'C:\\xampp\\htdocs\\cmstri\\admin\\plugins\\function.cms_help.php';
 if (!is_callable('smarty_function_html_options')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\smarty\\plugins\\function.html_options.php';
 if (!is_callable('smarty_cms_function_cms_action_url')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.cms_action_url.php';

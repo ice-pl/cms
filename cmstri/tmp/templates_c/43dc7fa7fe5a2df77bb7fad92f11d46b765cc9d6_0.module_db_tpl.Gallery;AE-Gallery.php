@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-03 00:55:58
+/* Smarty version 3.1.31, created on 2019-11-13 12:35:12
   from "module_db_tpl:Gallery;AE-Gallery" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbe178e5b9a10_48467073',
+  'unifunc' => 'content_5dcbea701948a7_10215654',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbe178e5b9a10_48467073 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbea701948a7_10215654 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="gallery" style="display: flex; align-items: center; justify-content: center;">
 <?php if (!empty($_smarty_tpl->tpl_vars['module_message']->value)) {?><h4><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['module_message']->value, ENT_QUOTES, 'UTF-8', true);?>

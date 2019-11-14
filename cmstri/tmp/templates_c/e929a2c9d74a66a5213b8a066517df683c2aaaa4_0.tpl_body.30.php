@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-05 06:59:56
+/* Smarty version 3.1.31, created on 2019-11-13 12:35:11
   from "tpl_body:30" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dc10fdc0377c3_34704526',
+  'unifunc' => 'content_5dcbea6fe42525_52875753',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e929a2c9d74a66a5213b8a066517df683c2aaaa4' => 
     array (
       0 => 'tpl_body:30',
-      1 => '1572933534',
+      1 => '1573613202',
       2 => 'tpl_body',
     ),
   ),
@@ -22,7 +22,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'cms_template:Lumia - Core - Javascript' => 1,
   ),
 ),false)) {
-function content_5dc10fdc0377c3_34704526 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbea6fe42525_52875753 (Smarty_Internal_Template $_smarty_tpl) {
+if (!is_callable('smarty_function_page_attr')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.page_attr.php';
+if (!is_callable('smarty_function_title')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.title.php';
 ?>
 <body>
   <div id="wrapper" style="min-height: calc(100vh - 400px);">
@@ -72,7 +74,14 @@ function content_5dc10fdc0377c3_34704526 (Smarty_Internal_Template $_smarty_tpl)
               </div>
               <div class="clearfix">
               </div>
-              <?php CMS_Content_Block::smarty_internal_fetch_contentblock(array(),$_smarty_tpl); ?>
+              <?php ob_start();
+echo smarty_function_page_attr(array('key'=>'extra1'),$_smarty_tpl);
+$_prefixVariable1=ob_get_clean();
+echo Gallery::function_plugin(array('dir'=>$_prefixVariable1,'template'=>"AE-Gallery"),$_smarty_tpl);?>
+
+                    <h3 style="margin-top: 20px; color: grey; text-shadow: 2px 2px rgba(128,128,128,0.3);"><?php echo smarty_function_title(array(),$_smarty_tpl);?>
+</h3>
+                    <?php CMS_Content_Block::smarty_internal_fetch_contentblock(array(),$_smarty_tpl); ?>
             </article>
             <!-- end article full post -->
 

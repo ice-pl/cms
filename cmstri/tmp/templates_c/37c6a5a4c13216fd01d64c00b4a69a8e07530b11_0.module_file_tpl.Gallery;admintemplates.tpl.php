@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 04:11:59
+/* Smarty version 3.1.31, created on 2019-11-13 11:32:09
   from "module_file_tpl:Gallery;admintemplates.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbcf3ffcd1b98_49910993',
+  'unifunc' => 'content_5dcbdba9921ed2_62630180',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbcf3ffcd1b98_49910993 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbdba9921ed2_62630180 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="pageoverflow">
   <p class="pageoptions"><?php echo $_smarty_tpl->tpl_vars['newtemplatelink']->value;?>

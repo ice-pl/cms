@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 03:17:42
+/* Smarty version 3.1.31, created on 2019-11-13 11:29:28
   from "module_file_tpl:DesignManager;admin_defaultadmin_csstooltip.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbce7468c8361_79000453',
+  'unifunc' => 'content_5dcbdb089c0218_59572848',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbce7468c8361_79000453 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbdb089c0218_59572848 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_function_cms_admin_user')) require_once 'C:\\xampp\\htdocs\\cmstri\\admin\\plugins\\function.cms_admin_user.php';
 if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\smarty\\plugins\\modifier.date_format.php';
 if (!is_callable('smarty_modifier_relative_time')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\modifier.relative_time.php';

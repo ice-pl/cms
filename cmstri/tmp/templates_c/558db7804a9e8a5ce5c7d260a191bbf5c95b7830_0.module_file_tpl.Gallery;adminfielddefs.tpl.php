@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 04:11:59
+/* Smarty version 3.1.31, created on 2019-11-13 11:32:09
   from "module_file_tpl:Gallery;adminfielddefs.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbcf3ffc68928_46984379',
+  'unifunc' => 'content_5dcbdba98c0204_21527660',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbcf3ffc68928_46984379 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbdba98c0204_21527660 (Smarty_Internal_Template $_smarty_tpl) {
 if (count($_smarty_tpl->tpl_vars['items']->value) > 0) {?>
 <div class="pageoverflow">
   <p class="pageoptions"><?php echo $_smarty_tpl->tpl_vars['newfielddeflink']->value;?>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-03 21:28:15
+/* Smarty version 3.1.31, created on 2019-11-13 12:35:08
   from "cms_template:Lumia - News - Browse Category Sample" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbf385f19ec01_20428556',
+  'unifunc' => 'content_5dcbea6cc05239_16361945',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbf385f19ec01_20428556 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbea6cc05239_16361945 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_function_repeat')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.repeat.php';
 if ($_smarty_tpl->tpl_vars['count']->value > 0) {?>
 <ul class="cat">

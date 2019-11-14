@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 03:17:21
+/* Smarty version 3.1.31, created on 2019-11-14 05:09:23
   from "C:\xampp\htdocs\cmstri\admin\themes\OneEleven\templates\shortcuts.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbce73100ca26_52239448',
+  'unifunc' => 'content_5dccd373a86d01_32265489',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbce73100ca26_52239448 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dccd373a86d01_32265489 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_function_root_url')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.root_url.php';
 ?>
 <div class="shortcuts"><ul class="cf"><li class="help"><?php if (isset($_smarty_tpl->tpl_vars['module_help_url']->value)) {?><a href="<?php echo $_smarty_tpl->tpl_vars['module_help_url']->value;?>

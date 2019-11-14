@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-02 03:19:12
+/* Smarty version 3.1.31, created on 2019-11-13 11:29:27
   from "module_file_tpl:DesignManager;admin_defaultadmin_templates.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dbce7a00c4b30_93214390',
+  'unifunc' => 'content_5dcbdb07441e78_31417049',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbce7a00c4b30_93214390 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbdb07441e78_31417049 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_function_form_start')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.form_start.php';
 if (!is_callable('smarty_function_html_options')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\smarty\\plugins\\function.html_options.php';
 if (!is_callable('smarty_function_form_end')) require_once 'C:\\xampp\\htdocs\\cmstri\\lib\\plugins\\function.form_end.php';

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2019-11-05 06:56:01
+/* Smarty version 3.1.31, created on 2019-11-13 12:35:17
   from "tpl_body:47" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5dc10ef14c64b6_56573687',
+  'unifunc' => 'content_5dcbea75be7514_53846711',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'cms_template:Lumia - Core - Javascript' => 1,
   ),
 ),false)) {
-function content_5dc10ef14c64b6_56573687 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbea75be7514_53846711 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <body>
   <div id="wrapper" style="min-height: calc(100vh - 400px);">
